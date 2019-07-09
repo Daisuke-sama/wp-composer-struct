@@ -1,0 +1,6 @@
+/web/core
+/web/vendor
+/web/live
+/web/local-config.php
+
+/**/*.log

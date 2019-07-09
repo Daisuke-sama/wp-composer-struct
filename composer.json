@@ -1,0 +1,32 @@
+{
+	"name": "royal_pr/madam-maxi",
+	"description": "The installation for the Wordpress of madam-maxi.ru.",
+	"authors": [
+        	{
+            		"name"    : "Paul Burilichev",
+            		"homepage": "https://rpr.by"
+        	}
+    	],
+	"type": "project",
+	"repositories": [
+		{
+			"type": "composer",
+			"url" : "https://wpackagist.org"
+		}	
+	],
+	"config": {
+		"vendor-dir": "web/vendor"
+	},
+	"require": {
+		"composer/installers": "~1.0",
+		"johnpbloch/wordpress": "~5.2"
+	},
+	"extra" : {
+		"wordpress-install-dir": "web/core",
+		"installer-paths": {
+			"web/live/plugins/{$name}/": ["type:wordpress-plugin"],
+			"web/live/themes/{$name}/": ["type:wordpress-theme"],
+			"web/live/muplugins/{$name}/": ["type:wordpress-muplugin"]
+		}
+	}
+}
