@@ -13,6 +13,36 @@
 		{
 			"type": "composer",
 			"url": "https://wpackagist.org"
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "crstauf/query-monitor-extend",
+				"type": "wordpress-plugin",
+				"version": "1.0.0",
+				"source": {
+					"type": "git",
+					"url": "https://github.com/crstauf/query-monitor-extend",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "automattic/qm-memcache-stats",
+				"type": "wordpress-plugin",
+				"version": "1.0.0",
+				"source": {
+					"type": "git",
+					"url": "https://github.com/Automattic/qm-memcache-stats",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/khromov/wp-query-monitor-included-files"
 		}
 	],
 	"config": {
@@ -28,7 +58,11 @@
 		"roave/security-advisories": "dev-master",
 		"wpackagist-plugin/wp-inspect":"*",
 		"wpackagist-plugin/query-monitor":"*",
+		"crstauf/query-monitor-extend": "*",
+		"automattic/qm-memcache-stats": "*",
+		"khromov/query-monitor-included-files": "*",
 		"wpackagist-plugin/debug-bar":"*",
+		"wpackagist-plugin/debug-bar-plugin-activation":"*",
 		"wpackagist-plugin/debug-bar-rewrite-rules":"*",
 		"wpackagist-plugin/debug-bar-roles-and-capabilities":"*",
 		"wpackagist-plugin/debug-bar-screen-info":"*",
@@ -38,6 +72,7 @@
 		"wpackagist-plugin/debug-bar-cron":"*",
 		"wpackagist-plugin/debug-bar-custom-info":"*",
 		"wpackagist-plugin/debug-bar-shortcodes":"*",
+		"wpackagist-plugin/debug-bar-extender":"*",
 		"wpackagist-plugin/woocommerce-debug-bar":"*",
 		"wpackagist-plugin/scripts-styles-debug-bar":"*",
 		"wpackagist-plugin/fast-user-switching":"*",
