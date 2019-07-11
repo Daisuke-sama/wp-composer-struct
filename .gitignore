@@ -1,6 +1,17 @@
-/web/core
-/web/vendor
-/web/live
-/web/local-config.php
+### WordPress
+web/core
+web/live/advanced-cache.php
+web/live/backup-db/
+web/live/backups/
+web/live/blogs.dir/
+web/live/cache/
+web/live/upgrade/
+web/live/uploads/
+web/live/mu-plugins/
+web/live/wp-cache-config.php
+web/live/plugins/hello.php
 
-/**/*.log
+*.log
+local-config.php
+
+!web/live/mu-plugins/force-plugin-activation.php
