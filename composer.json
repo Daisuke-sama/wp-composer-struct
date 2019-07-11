@@ -47,7 +47,7 @@
 		"wordpress-install-dir": "web/core",
 		"installer-paths": {
 			"web/live/muplugins/{$name}/": [
-				"type:wordpress-muplugin",
+				"type:wordpress-muplugin"
 			],
 			"web/live/plugins/{$name}/": [
 				"type:wordpress-plugin"
