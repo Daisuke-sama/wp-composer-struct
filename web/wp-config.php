@@ -26,10 +26,20 @@ if ( ! defined( 'DISALLOW_FILE_MODS' ) ) {
 }
 
 // ========================
-// Custom Content Directory
+// Custom Directories
 // ========================
+define( 'WP_HOME', '//' . $_SERVER['HTTP_HOST'] . '/' );
+define( 'WP_SITEURL', '//' . $_SERVER['HTTP_HOST'] . '/core' );
 define( 'WP_CONTENT_DIR', __DIR__ . '/live' );
 define( 'WP_CONTENT_URL', '//' . $_SERVER['HTTP_HOST'] . '/live' );
+
+// ========================
+// Custom Safe Paths
+// ========================
+define( 'COOKIEPATH', '/' );
+define( 'SITECOOKIEPATH', '/core' );
+define( 'PLUGINS_COOKIE_PATH', '/live/plugins' );
+define( 'ADMIN_COOKIE_PATH', '/core' );
 
 // ================================================
 // You almost certainly do not want to change these
