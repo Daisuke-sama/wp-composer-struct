@@ -48,7 +48,6 @@
 		"installer-paths": {
 			"web/live/muplugins/{$name}/": [
 				"type:wordpress-muplugin",
-				"wpackagist-plugin/disable-wordpress-updates"
 			],
 			"web/live/plugins/{$name}/": [
 				"type:wordpress-plugin"
