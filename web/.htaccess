@@ -1,20 +1,10 @@
 <IfModule mod_rewrite.c>
-	RewriteEngine On
-	RewriteBase /
-	RewriteRule ^(wp-admin/.*)$ /core/$1 [L]
-	RewriteRule ^(wp-[^/]+\.php)$ /core/$1 [L]
-	RewriteRule ^xmlrpc\.php$ /core/xmlrpc.php [L]
-	RewriteRule ^(wp-includes/.*)$ /core/$1 [L]
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule . - [L]
+    RewriteRule  ^([_0-9a-zA-Z-]+/)?(wp-.*) /core/$2 [L]
+    RewriteRule  ^([_0-9a-zA-Z-]+/)?(.*\.php)$ /core/$2 [L]
+    RewriteRule . index.php [L]
 </IfModule>
-
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-	RewriteBase /
-	RewriteRule ^index\.php$ - [L]
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule . /index.php [L]
-</IfModule>
-
-# END WordPress
