@@ -76,7 +76,8 @@
 		"wpackagist-plugin/woocommerce-debug-bar":"*",
 		"wpackagist-plugin/scripts-styles-debug-bar":"*",
 		"wpackagist-plugin/fast-user-switching":"*",
-		"wpackagist-plugin/user-switching":"*"
+		"wpackagist-plugin/user-switching":"*",
+		"wpackagist-plugin/wp-php-console":"*"
 	},
 	"extra": {
 		"wordpress-install-dir": "web/core",
